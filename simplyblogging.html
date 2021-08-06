@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simply Blogging Site</title>
+    <link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css”rel=”nofollow” integrity=”sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm” crossorigin=”anonymous”>
+    <script src="blog.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h5>Simply Blogging</h5>
+
+        <div class="fixed-header">
+            <div class="container">
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">Aboutus</a>
+                    <a href="#">Contacts</a>
+                    <a href="#" class="nav-link active">Add Blog</a>
+                </nav>
+            </div>
+        </div>
+        <div class="container">
+
+        <nav>
+        
+        <form class="form-group">
+            <div class="row">
+                <div class="col-4"><label>Title</label></div>
+                <div class="col-4"><input type="text" name="title" id="title" class="form-control" required></div>
+            </div>
+            <div class="row">
+                <div class="col-4"><label>Article</label></div>
+                <div class="col-4"><textarea class="form-control" id="article" rows="7" required></textarea></div>
+            </div>
+            <div class="row">
+                <div class="col-4"><label>Image URL</label></div>
+                <div class="col-4"><input type="text" name="imgurl" id="img" class="form-control" required></div>
+            </div>
+            <div class="row">
+                <div class="col-4"><input type="button" class="btn btn-outline-success" value="blog" onclick="blog()"></div>
+            </div>
+        </form>
+
+        <div class="container-fluid" id="blog" style="white-space: pre-wrap;">
+        </div>
+    </div>
+
+   
+</body>
+</html>
