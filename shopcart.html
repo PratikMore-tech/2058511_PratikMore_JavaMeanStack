@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <script src="demo.js"></script>
+    <link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css”rel=”nofollow” integrity=”sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm” crossorigin=”anonymous”>
+    <style>
+        h1{
+            text-align: center;
+        }
+        div{
+            border: groove 1em red;
+            border-radius: 2em;
+  
+        }
+    </style>
+</head>
+<body onload="displayData()">
+    <h1>Shopping Cart</h1>
+    <div class="container">
+        <p id="cart-size">Cart Size: </p> <br>
+        <input type="button" value="Checkout" onclick= "location.href = 'cartcheckout.html';"><br>
+        <div class="row">
+            <div class="col" id = "Apple">
+                <p>Name: Apple</p>
+                <p id="totalApple"></p><br>
+                <p>Price: $3</p><br>
+                <img width="150px" src="https://media.istockphoto.com/vectors/red-apple-illustration-icon-vector-vector-id1045495508?k=6&m=1045495508&s=612x612&w=0&h=d_P7mpubzh6ZBgyrIi9--XT0rYcEdRQX_y-isdmStlQ=" alt="Apple">
+                <br><input type="button" value="Add" onclick="addItem('Apple', 3)">
+                <br><input type="button" value="Remove" onclick="removeItem('Apple')">
+            </div>
+            <div class="col" id="Laptop">
+                <p>Name: Laptop</p>
+                <p id="totalLaptop"></p><br>
+                <p>Price: $1000</p><br>
+                <img width="150px" src="https://i.pcmag.com/imagery/reviews/06TqTB1vRy2IW5vYMmPWtkH-6.1596642302.fit_scale.size_1028x578.jpg"alt="Laptop">
+                <br><input type="button" value="Add" onclick="addItem('Laptop', 1000)">
+                <br><input type="button" value="Remove" onclick="removeItem('Laptop')">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" id="Helmet">
+                <p>Name: Helmet</p>
+                <p id="totalHelmet"></p><br>
+                <p>Price: $25</p><br>
+                <img width="150px" src="https://images.unsplash.com/photo-1575396565848-e8031f12ce2a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=925&q=80"alt="Helmet">
+                <br><input type="button" value="Add" onclick="addItem('Helmet', 25)">
+                <br><input type="button" value="Remove" onclick="removeItem('Helmet')">
+            </div>
+            <div class="col" id="Mobile">
+                <p>Name: Mobile</p>
+                <p id="totalMobile"></p><br>
+                <p>Price: $500</p><br>
+                <img width="150px" src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s10-1.jpg"alt="Mobile">
+                <br><input type="button" value="Add" onclick="addItem('Mobile', 500)">
+                <br><input type="button" value="Remove" onclick="removeItem('Mobile')">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
